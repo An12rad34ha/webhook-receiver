@@ -10,7 +10,6 @@ def health():
 
 @app.route("/webhook", methods=["POST"])
 def receive_webhook():
-
     payload = request.get_json(silent=True)
 
     if payload is None:
